@@ -1,0 +1,36 @@
+{
+  "name": "Burgernotes repository",
+  "subtitle": "A source for Burgernotes releases",
+  "description": "Welcome to the official Burgernotes distribution repository!",
+  "iconURL": "https://centrifuge.hectabit.org/HectaBit/Burgernotes-iOS/raw/branch/main/Burgernotes/Assets.xcassets/org.hectabit.burgernotes.imageset/1024x.png",
+  "website": "https://notes.hectabit.org",
+  "tintColor": "#0096FF",
+  "featuredApps": [
+    "org.hectabit.burgernotes"
+  ],
+  "apps": [
+      {
+          "name": "Burgernotes",
+          "bundleIdentifier": "org.hectabit.burgernotes",
+          "developerName": "HectaBit",
+          "subtitle": "Secure E2E encrypted note-taking app",
+          "iconURL": "https://centrifuge.hectabit.org/HectaBit/Burgernotes-iOS/raw/branch/main/Burgernotes/Assets.xcassets/org.hectabit.burgernotes.imageset/1024x.png",
+          "tintColor": "#FFFFFF",
+          "category": "utilities",
+          "screenshots": [],
+          "versions": [
+            {
+              "version": "b1.0.0",
+              "buildVersion": "1",
+              "date": "2024-02-29",
+              "downloadURL": "https://centrifuge.hectabit.org/HectaBit/Burgernotes-iOS/releases/download/b1.0.0/Burgernotes.ipa",
+              "size": 79821,
+              "minOSVersion": "15.0",
+            },
+          ],
+          "appPermissions": {},
+          "patreon": {},
+      },
+  ],
+  "news": [],
+}

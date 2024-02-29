@@ -1,0 +1,717 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ED493AD22B8E468500C18FCD /* HashHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED493AD12B8E468500C18FCD /* HashHelper.swift */; };
+		ED5296392B8D159B004FF179 /* sha3_512.c in Sources */ = {isa = PBXBuildFile; fileRef = ED5296382B8D159B004FF179 /* sha3_512.c */; };
+		ED9677702B8FCCC30034E0D9 /* SizeHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED96776F2B8FCCC30034E0D9 /* SizeHelper.swift */; };
+		ED9677722B909DA30034E0D9 /* Reach.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9677712B909DA30034E0D9 /* Reach.swift */; };
+		ED96777B2B90C6810034E0D9 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = ED96777A2B90C6810034E0D9 /* Makefile */; };
+		ED9677822B90E12D0034E0D9 /* crypto-js.min.js in Resources */ = {isa = PBXBuildFile; fileRef = ED9677812B90E12D0034E0D9 /* crypto-js.min.js */; };
+		EDBAB7712B88A96800F2B858 /* BurgernotesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBAB7702B88A96800F2B858 /* BurgernotesApp.swift */; };
+		EDBAB7732B88A96800F2B858 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBAB7722B88A96800F2B858 /* ContentView.swift */; };
+		EDBAB7752B88A96C00F2B858 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDBAB7742B88A96C00F2B858 /* Assets.xcassets */; };
+		EDBAB7822B88A96D00F2B858 /* BurgernotesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBAB7812B88A96D00F2B858 /* BurgernotesTests.swift */; };
+		EDBAB78C2B88A96D00F2B858 /* BurgernotesUITests in Sources */ = {isa = PBXBuildFile; fileRef = EDBAB78B2B88A96D00F2B858 /* BurgernotesUITests */; };
+		EDBAB78E2B88A96D00F2B858 /* BurgernotesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBAB78D2B88A96D00F2B858 /* BurgernotesUITestsLaunchTests.swift */; };
+		EDC9B22C2B8F6C57008C30D9 /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = EDC9B22B2B8F6C57008C30D9 /* KeychainSwift */; };
+		EDE673DD2B8E01FD00305BDC /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE673DC2B8E01FD00305BDC /* String.swift */; };
+		EDE673E22B8E03B300305BDC /* JSONHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE673E12B8E03B300305BDC /* JSONHelper.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EDBAB77E2B88A96D00F2B858 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EDBAB7652B88A96800F2B858 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EDBAB76C2B88A96800F2B858;
+			remoteInfo = PageBurger;
+		};
+		EDBAB7882B88A96D00F2B858 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EDBAB7652B88A96800F2B858 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EDBAB76C2B88A96800F2B858;
+			remoteInfo = PageBurger;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		ED4907B12B8D37A9001B6276 /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
+		ED4907B22B8D37BC001B6276 /* COPYING.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = COPYING.md; sourceTree = "<group>"; };
+		ED4907B42B8D394F001B6276 /* CREDITS.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CREDITS.md; sourceTree = "<group>"; };
+		ED493AD12B8E468500C18FCD /* HashHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashHelper.swift; sourceTree = "<group>"; };
+		ED5296372B8D159A004FF179 /* Burgernotes-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Burgernotes-Bridging-Header.h"; sourceTree = "<group>"; };
+		ED5296382B8D159B004FF179 /* sha3_512.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = sha3_512.c; sourceTree = "<group>"; };
+		ED52963A2B8D1A93004FF179 /* sha3_512.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sha3_512.h; sourceTree = "<group>"; };
+		ED96776F2B8FCCC30034E0D9 /* SizeHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizeHelper.swift; sourceTree = "<group>"; };
+		ED9677712B909DA30034E0D9 /* Reach.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reach.swift; sourceTree = "<group>"; };
+		ED9677732B90ADEA0034E0D9 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		ED9677752B90B0820034E0D9 /* repo.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = repo.json; sourceTree = "<group>"; };
+		ED9677782B90C47C0034E0D9 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		ED96777A2B90C6810034E0D9 /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		ED9677812B90E12D0034E0D9 /* crypto-js.min.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "crypto-js.min.js"; sourceTree = "<group>"; };
+		ED9677832B90E1B30034E0D9 /* .gitattributes */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitattributes; sourceTree = "<group>"; };
+		EDBAB76D2B88A96800F2B858 /* Burgernotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Burgernotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDBAB7702B88A96800F2B858 /* BurgernotesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BurgernotesApp.swift; sourceTree = "<group>"; };
+		EDBAB7722B88A96800F2B858 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EDBAB7742B88A96C00F2B858 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EDBAB77D2B88A96D00F2B858 /* BurgernotesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BurgernotesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDBAB7812B88A96D00F2B858 /* BurgernotesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BurgernotesTests.swift; sourceTree = "<group>"; };
+		EDBAB7872B88A96D00F2B858 /* BurgernotesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BurgernotesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDBAB78B2B88A96D00F2B858 /* BurgernotesUITests */ = {isa = PBXFileReference; lastKnownFileType = text; path = BurgernotesUITests; sourceTree = "<group>"; };
+		EDBAB78D2B88A96D00F2B858 /* BurgernotesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BurgernotesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EDE673DC2B8E01FD00305BDC /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		EDE673E12B8E03B300305BDC /* JSONHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONHelper.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EDBAB76A2B88A96800F2B858 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDC9B22C2B8F6C57008C30D9 /* KeychainSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDBAB77A2B88A96D00F2B858 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDBAB7842B88A96D00F2B858 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ED4907B32B8D38A8001B6276 /* sha3_512 */ = {
+			isa = PBXGroup;
+			children = (
+				ED5296382B8D159B004FF179 /* sha3_512.c */,
+				ED52963A2B8D1A93004FF179 /* sha3_512.h */,
+			);
+			path = sha3_512;
+			sourceTree = "<group>";
+		};
+		ED493ACB2B8E246100C18FCD /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				ED493AD12B8E468500C18FCD /* HashHelper.swift */,
+				ED96776F2B8FCCC30034E0D9 /* SizeHelper.swift */,
+				ED9677712B909DA30034E0D9 /* Reach.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		ED52962C2B8CD7CD004FF179 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ED9677742B90B0680034E0D9 /* AltStore */ = {
+			isa = PBXGroup;
+			children = (
+				ED9677752B90B0820034E0D9 /* repo.json */,
+			);
+			path = AltStore;
+			sourceTree = "<group>";
+		};
+		EDBAB7642B88A96800F2B858 = {
+			isa = PBXGroup;
+			children = (
+				ED9677832B90E1B30034E0D9 /* .gitattributes */,
+				ED9677782B90C47C0034E0D9 /* .gitignore */,
+				ED96777A2B90C6810034E0D9 /* Makefile */,
+				ED9677732B90ADEA0034E0D9 /* README.md */,
+				ED4907B42B8D394F001B6276 /* CREDITS.md */,
+				ED4907B22B8D37BC001B6276 /* COPYING.md */,
+				ED4907B12B8D37A9001B6276 /* LICENSE.md */,
+				ED9677742B90B0680034E0D9 /* AltStore */,
+				EDBAB76F2B88A96800F2B858 /* Burgernotes */,
+				EDBAB7802B88A96D00F2B858 /* BurgernotesTests */,
+				EDBAB78A2B88A96D00F2B858 /* BurgernotesUITests */,
+				EDBAB76E2B88A96800F2B858 /* Products */,
+				ED52962C2B8CD7CD004FF179 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EDBAB76E2B88A96800F2B858 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EDBAB76D2B88A96800F2B858 /* Burgernotes.app */,
+				EDBAB77D2B88A96D00F2B858 /* BurgernotesTests.xctest */,
+				EDBAB7872B88A96D00F2B858 /* BurgernotesUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EDBAB76F2B88A96800F2B858 /* Burgernotes */ = {
+			isa = PBXGroup;
+			children = (
+				ED493ACB2B8E246100C18FCD /* Common */,
+				EDE673DF2B8E02D600305BDC /* Network */,
+				EDE673DE2B8E020A00305BDC /* Extensions */,
+				ED4907B32B8D38A8001B6276 /* sha3_512 */,
+				ED9677812B90E12D0034E0D9 /* crypto-js.min.js */,
+				ED5296372B8D159A004FF179 /* Burgernotes-Bridging-Header.h */,
+				EDBAB7702B88A96800F2B858 /* BurgernotesApp.swift */,
+				EDBAB7722B88A96800F2B858 /* ContentView.swift */,
+				EDBAB7742B88A96C00F2B858 /* Assets.xcassets */,
+			);
+			path = Burgernotes;
+			sourceTree = "<group>";
+		};
+		EDBAB7802B88A96D00F2B858 /* BurgernotesTests */ = {
+			isa = PBXGroup;
+			children = (
+				EDBAB7812B88A96D00F2B858 /* BurgernotesTests.swift */,
+			);
+			path = BurgernotesTests;
+			sourceTree = "<group>";
+		};
+		EDBAB78A2B88A96D00F2B858 /* BurgernotesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EDBAB78B2B88A96D00F2B858 /* BurgernotesUITests */,
+				EDBAB78D2B88A96D00F2B858 /* BurgernotesUITestsLaunchTests.swift */,
+			);
+			path = BurgernotesUITests;
+			sourceTree = "<group>";
+		};
+		EDE673DE2B8E020A00305BDC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EDE673DC2B8E01FD00305BDC /* String.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		EDE673DF2B8E02D600305BDC /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				EDE673E12B8E03B300305BDC /* JSONHelper.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EDBAB76C2B88A96800F2B858 /* Burgernotes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDBAB7912B88A96D00F2B858 /* Build configuration list for PBXNativeTarget "Burgernotes" */;
+			buildPhases = (
+				EDBAB7692B88A96800F2B858 /* Sources */,
+				EDBAB76A2B88A96800F2B858 /* Frameworks */,
+				EDBAB76B2B88A96800F2B858 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Burgernotes;
+			packageProductDependencies = (
+				EDC9B22B2B8F6C57008C30D9 /* KeychainSwift */,
+			);
+			productName = PageBurger;
+			productReference = EDBAB76D2B88A96800F2B858 /* Burgernotes.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EDBAB77C2B88A96D00F2B858 /* BurgernotesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDBAB7942B88A96D00F2B858 /* Build configuration list for PBXNativeTarget "BurgernotesTests" */;
+			buildPhases = (
+				EDBAB7792B88A96D00F2B858 /* Sources */,
+				EDBAB77A2B88A96D00F2B858 /* Frameworks */,
+				EDBAB77B2B88A96D00F2B858 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EDBAB77F2B88A96D00F2B858 /* PBXTargetDependency */,
+			);
+			name = BurgernotesTests;
+			productName = PageBurgerTests;
+			productReference = EDBAB77D2B88A96D00F2B858 /* BurgernotesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EDBAB7862B88A96D00F2B858 /* BurgernotesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDBAB7972B88A96D00F2B858 /* Build configuration list for PBXNativeTarget "BurgernotesUITests" */;
+			buildPhases = (
+				EDBAB7832B88A96D00F2B858 /* Sources */,
+				EDBAB7842B88A96D00F2B858 /* Frameworks */,
+				EDBAB7852B88A96D00F2B858 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EDBAB7892B88A96D00F2B858 /* PBXTargetDependency */,
+			);
+			name = BurgernotesUITests;
+			productName = PageBurgerUITests;
+			productReference = EDBAB7872B88A96D00F2B858 /* BurgernotesUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EDBAB7652B88A96800F2B858 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					EDBAB76C2B88A96800F2B858 = {
+						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1420;
+					};
+					EDBAB77C2B88A96D00F2B858 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = EDBAB76C2B88A96800F2B858;
+					};
+					EDBAB7862B88A96D00F2B858 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = EDBAB76C2B88A96800F2B858;
+					};
+				};
+			};
+			buildConfigurationList = EDBAB7682B88A96800F2B858 /* Build configuration list for PBXProject "Burgernotes" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EDBAB7642B88A96800F2B858;
+			packageReferences = (
+				EDC9B22A2B8F6C57008C30D9 /* XCRemoteSwiftPackageReference "keychain-swift" */,
+			);
+			productRefGroup = EDBAB76E2B88A96800F2B858 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EDBAB76C2B88A96800F2B858 /* Burgernotes */,
+				EDBAB77C2B88A96D00F2B858 /* BurgernotesTests */,
+				EDBAB7862B88A96D00F2B858 /* BurgernotesUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EDBAB76B2B88A96800F2B858 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED9677822B90E12D0034E0D9 /* crypto-js.min.js in Resources */,
+				EDBAB7752B88A96C00F2B858 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDBAB77B2B88A96D00F2B858 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDBAB7852B88A96D00F2B858 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EDBAB7692B88A96800F2B858 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED96777B2B90C6810034E0D9 /* Makefile in Sources */,
+				ED9677702B8FCCC30034E0D9 /* SizeHelper.swift in Sources */,
+				ED9677722B909DA30034E0D9 /* Reach.swift in Sources */,
+				EDBAB7732B88A96800F2B858 /* ContentView.swift in Sources */,
+				ED493AD22B8E468500C18FCD /* HashHelper.swift in Sources */,
+				EDE673E22B8E03B300305BDC /* JSONHelper.swift in Sources */,
+				ED5296392B8D159B004FF179 /* sha3_512.c in Sources */,
+				EDE673DD2B8E01FD00305BDC /* String.swift in Sources */,
+				EDBAB7712B88A96800F2B858 /* BurgernotesApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDBAB7792B88A96D00F2B858 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDBAB7822B88A96D00F2B858 /* BurgernotesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDBAB7832B88A96D00F2B858 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDBAB78E2B88A96D00F2B858 /* BurgernotesUITestsLaunchTests.swift in Sources */,
+				EDBAB78C2B88A96D00F2B858 /* BurgernotesUITests in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EDBAB77F2B88A96D00F2B858 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EDBAB76C2B88A96800F2B858 /* Burgernotes */;
+			targetProxy = EDBAB77E2B88A96D00F2B858 /* PBXContainerItemProxy */;
+		};
+		EDBAB7892B88A96D00F2B858 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EDBAB76C2B88A96800F2B858 /* Burgernotes */;
+			targetProxy = EDBAB7882B88A96D00F2B858 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		EDBAB78F2B88A96D00F2B858 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EDBAB7902B88A96D00F2B858 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EDBAB7922B88A96D00F2B858 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Burgernotes;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = b1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.hectabit.burgernotes;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Burgernotes/Burgernotes-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EDBAB7932B88A96D00F2B858 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = FC8QU3HVT8;
+				ENABLE_PREVIEWS = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Burgernotes;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = b1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.hectabit.burgernotes;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Burgernotes/Burgernotes-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EDBAB7952B88A96D00F2B858 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.hectabit.PageBurgerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Burgernotes.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Burgernotes";
+			};
+			name = Debug;
+		};
+		EDBAB7962B88A96D00F2B858 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.hectabit.PageBurgerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Burgernotes.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Burgernotes";
+			};
+			name = Release;
+		};
+		EDBAB7982B88A96D00F2B858 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.hectabit.PageBurgerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PageBurger;
+			};
+			name = Debug;
+		};
+		EDBAB7992B88A96D00F2B858 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.hectabit.PageBurgerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PageBurger;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EDBAB7682B88A96800F2B858 /* Build configuration list for PBXProject "Burgernotes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDBAB78F2B88A96D00F2B858 /* Debug */,
+				EDBAB7902B88A96D00F2B858 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDBAB7912B88A96D00F2B858 /* Build configuration list for PBXNativeTarget "Burgernotes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDBAB7922B88A96D00F2B858 /* Debug */,
+				EDBAB7932B88A96D00F2B858 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDBAB7942B88A96D00F2B858 /* Build configuration list for PBXNativeTarget "BurgernotesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDBAB7952B88A96D00F2B858 /* Debug */,
+				EDBAB7962B88A96D00F2B858 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDBAB7972B88A96D00F2B858 /* Build configuration list for PBXNativeTarget "BurgernotesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDBAB7982B88A96D00F2B858 /* Debug */,
+				EDBAB7992B88A96D00F2B858 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EDC9B22A2B8F6C57008C30D9 /* XCRemoteSwiftPackageReference "keychain-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/evgenyneu/keychain-swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EDC9B22B2B8F6C57008C30D9 /* KeychainSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EDC9B22A2B8F6C57008C30D9 /* XCRemoteSwiftPackageReference "keychain-swift" */;
+			productName = KeychainSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = EDBAB7652B88A96800F2B858 /* Project object */;
+}
