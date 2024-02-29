@@ -4,9 +4,7 @@ The official native Burgernotes iOS client, programmed in Swift.
 
 <a href="https://www.shorturl.at/fBNXY"><img src="https://i.imgur.com/46qhEAv.png" width="200"></a>
 
-> ⚠️ IMPORTANT
-
-> THIS IS BETA SOFTWARE, THERE COULD BE A LOT OF BUGS.
+> ⚠️ THIS IS BETA SOFTWARE, THERE COULD BE A LOT OF BUGS.
 
 # Installation
 
@@ -15,12 +13,10 @@ To install the application on AltStore/TrollApps, you should add the repository:
 - [AltStore](https://shorturl.at/fBNXY)
 - [TrollApps](https://shorturl.at/glmzQ)
 
-Burgernotes will be available for installation in there.
+Burgernotes will be available for installation in there afterwards.
 
 # Building
 
-> ⚠️ IMPORTANT
-
-> XCode MUST be installed (alongside the XCode commandline tools)
+> ⚠️ XCode MUST be installed (alongside the XCode commandline tools)
 
 To build, simply run `make` on macOS. This will build an unsigned ipa
