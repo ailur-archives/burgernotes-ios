@@ -43,7 +43,7 @@ struct ContentView: View {
     
     @AppStorage("Username") var storedUsername: String? // Usernames are stored in UserDefaults for the sake of convenience
     let keychain = KeychainSwift()
-    
+
     func login() {
         let hashHelper = HashHelper()
         // Use HashHelper to hash our password
@@ -212,14 +212,13 @@ struct ContentView: View {
                 }
                 .padding()
                 
-                Text("Burgernotes")
-                    .font(.title)
-                    .padding()
-                
                 Group {
                     if isOnline {
                         if !usingSettings {
                             if !isEditing {
+                                Text("Burgernotes")
+                                    .font(.title)
+                                    .padding()
                                 List {
                                     ForEach(notes, id: \.id) { note in
                                         let noteTitle = note.title.decrypt(password: encryptionKey ?? "this bum ain't got an encryption key!!!")
@@ -285,6 +284,7 @@ struct ContentView: View {
                             }) {
                                 Image(systemName: "chevron.left")
                                     .imageScale(.large)
+                                Text("Back")
                             }
                             .padding()
                             Spacer()
@@ -350,6 +350,31 @@ struct ContentView: View {
                         if let topVC = UIApplication.shared.keyWindow?.rootViewController { topVC.present(dialog, animated: true) } // We can keep using keyWindow, it's not a big deal for this specific usecase that it's deprecated
                     }) {
                         Text("Sign out")
+                            .foregroundStyle(Color.red) // Set the text color to red
+                    }
+                    Button(action: {
+                        let dialog = UIAlertController(title: "Delete my account", message: "Are you sure you want to delete your account? THIS CANNOT BE REVERSED", preferredStyle: .alert)
+                        // In the case of a signout:
+                        let deleteAccount = UIAlertAction(title: "Yes", style: .destructive) { _ in
+                            guard let url = URL(string: "https://notes.hectabit.org/api/deleteaccount") else { return }
+                            let parameters = ["secretKey": "\(secretKey ?? "bum")"]
+                            JSONHelper.sendJSONRequest(url: url, parameters: parameters) { result in
+                                switch result {
+                                case .success:
+                                    keychain.delete("secretKey")
+                                    UserDefaults.standard.removeObject(forKey: "Username") // This will also trigger SwiftUI to change vstacks
+                                    keychain.delete("encryptionKey")
+                                    usingSettings = false
+                                case .failure(let error):
+                                    print("Failed to delete account: \(error)") // This is not supposed to happen under any circumstances unless the session was deauthorized remotely
+                                }
+                            }
+                        }
+                        let no = UIAlertAction(title: "No", style: .default)
+                        dialog.addAction(deleteAccount);dialog.addAction(no)
+                        if let topVC = UIApplication.shared.keyWindow?.rootViewController { topVC.present(dialog, animated: true) } // We can keep using keyWindow, it's not a big deal for this specific usecase that it's deprecated
+                    }) {
+                        Text("Delete my account")
                             .foregroundStyle(Color.red) // Set the text color to red
                     }
                 }
@@ -428,7 +453,7 @@ struct ContentView: View {
             .edgesIgnoringSafeArea(.all)
         }
     }
-
+    
     // Fetch notes
     private func fetchNotes() {
         let secretKey = keychain.get("secretKey")
